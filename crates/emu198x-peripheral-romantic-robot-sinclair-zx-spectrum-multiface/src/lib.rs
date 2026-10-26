@@ -49,7 +49,7 @@
 //! x128.speccy.cz for the Multiface 3's reversed sense. Fuse's paging
 //! trap at `$0066` sits before the opcode fetch in `z80/z80_ops.c`.
 
-use common_sinclair_zx_spectrum::peripheral::{MemoryIntercept, Peripheral};
+use emu198x_bus_sinclair_zx_spectrum::{MemoryIntercept, Peripheral};
 
 /// The size of the ROM and of the RAM: 8 KB each.
 pub const MULTIFACE_MEMORY_BYTES: usize = 0x2000;
